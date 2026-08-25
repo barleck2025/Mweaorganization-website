@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - MWEA | Mara Women Empowerment Assistance</title>
+  <meta name="description" content="Explore MWEA's community projects including water pans, education sponsorship, vocational training, and agricultural programs in Tanzania's Mara region." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="MWEA Home">
+      <div class="brand-logo">
+        <img src="image/mwea-logo.png" alt="MWEA Logo" onerror="this.style.display='none';this.parentElement.textContent='MWEA'">
+      </div>
+      <span class="brand-name">MWEA</span>
+    </a>
+
+    <div class="search-container">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Search pages..." aria-label="Search website" autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="primaryNav" class="nav" aria-label="Main navigation">
+      <button class="nav-close" id="navClose" aria-label="Close menu">✕</button>
+      
+      <div class="nav-search-mobile">
+        <input type="text" id="searchInputMobile" placeholder="Search...">
+      </div>
+      
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">About <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></button>
+          <ul class="dropdown">
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> Who We Are</a></li>
+            <li><a href="about.html#mission"><i class="fas fa-bullseye"></i> Mission</a></li>
+            <li><a href="about.html#vision"><i class="fas fa-eye"></i> Vision</a></li>
+            <li><a href="about.html#journey"><i class="fas fa-timeline"></i> Our Journey</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-actions">
+          <a href="contact.html?subject=donation" class="nav-btn nav-btn-donate">Donate</a>
+          <a href="contact.html?subject=volunteer" class="nav-btn nav-btn-volunteer">Volunteer</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== PAGE HEADER ===== -->
+<section class="page-header" style="background: linear-gradient(135deg, rgba(0, 26, 77, 0.95) 0%, rgba(0, 51, 25, 0.95) 100%), url('image/Contact.jpg') center/cover;">
+  <div class="container">
+    <h1 data-aos="fade-up">Our <span class="highlight">Projects</span></h1>
+    <p data-aos="fade-up" data-aos-delay="100">Discover the initiatives creating lasting change in communities across the Mara region.</p>
+  </div>
+</section>
+
+<!-- ===== ALL PROJECTS ===== -->
+<section class="section-padding">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Featured <span class="highlight">Initiatives</span></h2>
+      <p>Each project is designed to address specific community needs and create sustainable impact.</p>
+    </div>
+
+    <!-- Project 1: DUPC3 Waterpans -->
+    <div class="project-card" data-aos="fade-up" style="margin-bottom:2rem;display:grid;grid-template-columns:1fr 2fr;gap:2rem;background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);">
+      <img src="image/masurura-water.jpg" alt="DUPC3 Waterpans Project" class="project-image" style="height:100%;min-height:300px;object-fit:cover;">
+      <div class="project-info" style="padding:2rem 2rem 2rem 0;">
+        <span class="project-tag" style="background:var(--primary);color:var(--white);">Active</span>
+        <h3 style="color:var(--primary-dark);font-size:1.6rem;margin-top:0.5rem;">DUPC3 Waterpans Project</h3>
+        <p style="color:var(--gray-600);font-size:1rem;line-height:1.8;margin-bottom:1rem;">
+          A 5-year sustainable waterpans project (2023-2027) funded by the Dutch government, focused on water and health. 
+          The project builds local capacities in Tanzania and Kenya through collaborative activities such as joint research, 
+          education, and knowledge sharing, ensuring communities develop sustainable solutions to their water-related challenges.
+        </p>
+        <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem;">
+          <span style="font-size:0.85rem;color:var(--gray-500);"><i class="fas fa-calendar" style="color:var(--primary);"></i> 2023 - 2027</span>
+          <span style="font-size:0.85rem;color:var(--gray-500);"><i class="fas fa-globe-africa" style="color:var(--primary);"></i> Tanzania & Kenya</span>
+          <span style="font-size:0.85rem;color:var(--gray-500);"><i class="fas fa-water" style="color:var(--primary);"></i> Water & Health</span>
+        </div>
+        <a href="contact.html?subject=donation" class="btn btn-sm">Support This Project</a>
+      </div>
+    </div>
+
+    <!-- Project 2: WWCC -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="100" style="margin-bottom:2rem;display:grid;grid-template-columns:2fr 1fr;gap:2rem;background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);">
+      <div class="project-info" style="padding:2rem 0 2rem 2rem;">
+        <span class="project-tag" style="background:var(--accent);color:var(--primary-dark);">Completed</span>
+        <h3 style="color:var(--primary-dark);font-size:1.6rem;margin-top:0.5rem;">Women and Water for Change (WWCC)</h3>
+        <p style="color:var(--gray-600);font-size:1rem;line-height:1.8;margin-bottom:1rem;">
+          Funded by the Coca-Cola Foundation and implemented by IHE Delft, this 18-month project (2019-2021) focused on 
+          strengthening women's participation in decision-making related to water, public health, and sustainable resource 
+          management. MWEA led the implementation in the Mara wetlands through a sub-grant from IHE Delft.
+        </p>
+        <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem;">
+          <span style="font-size:0.85rem;color:var(--gray-500);"><i class="fas fa-calendar" style="color:var(--primary);"></i> 2019 - 2021</span>
+          <span style="font-size:0.85rem;color:var(--gray-500);"><i class="fas fa-female" style="color:var(--primary);"></i> Women Empowerment</span>
+          <span style="font-size:0.85rem;color:var(--gray-500);"><i class="fas fa-hand-holding-heart" style="color:var(--primary);"></i> 3 Districts</span>
+        </div>
+        <a href="contact.html?subject=donation" class="btn btn-sm">Learn More</a>
+      </div>
+      <img src="image/education.jpg" alt="WWCC Project" class="project-image" style="height:100%;min-height:300px;object-fit:cover;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23e8f5ed%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%22200%22 y=%22150%22 text-anchor=%22middle%22 font-size=%2248%22 fill=%22%230a4a4a%22%3E💧%3C/text%3E%3C/svg%3E'">
+    </div>
+
+    <!-- Project 3: Vocational Training -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="200" style="display:grid;grid-template-columns:1fr 2fr;gap:2rem;background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);">
+      <img src="image/training.webp" alt="Vocational Training" class="project-image" style="height:100%;min-height:300px;object-fit:cover;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23e8f5ed%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%22200%22 y=%22150%22 text-anchor=%22middle%22 font-size=%2248%22 fill=%22%230a4a4a%22%3E🪡%3C/text%3E%3C/svg%3E'">
+      <div class="project-info" style="padding:2rem 2rem 2rem 0;">
+        <span class="project-tag" style="background:var(--primary);color:var(--white);">Active</span>
+        <h3 style="color:var(--primary-dark);font-size:1.6rem;margin-top:0.5rem;">Vocational Training & Skills Development</h3>
+        <p style="color:var(--gray-600);font-size:1rem;line-height:1.8;margin-bottom:1rem;">
+          Skills are the foundation of economic independence. Our vocational training program teaches women and youth practical skills 
+          in tailoring, agriculture, handicrafts, and small business management, enabling them to create sustainable livelihoods.
+        </p>
+        <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem;">
+          <span style="font-size:0.85rem;color:var(--gray-500);"><i class="fas fa-users" style="color:var(--primary);"></i> 500+ Trained</span>
+          <span style="font-size:0.85rem;color:var(--gray-500);"><i class="fas fa-store" style="color:var(--primary);"></i> 200+ Businesses Started</span>
+          <span style="font-size:0.85rem;color:var(--gray-500);"><i class="fas fa-calendar" style="color:var(--primary);"></i> Since 2015</span>
+        </div>
+        <a href="contact.html?subject=donation" class="btn btn-sm">Support Training</a>
+      </div>
+    </div>
+
+    <!-- More Projects Grid -->
+    <div class="section-title" style="margin-top:4rem;" data-aos="fade-up">
+      <h2>More <span class="highlight">Initiatives</span></h2>
+      <p>Additional programs making a difference in our communities.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-icon"><i class="fas fa-seedling"></i></div>
+        <h3>Sustainable Agriculture</h3>
+        <p>Training and support for sustainable farming practices to improve food security and income for rural families.</p>
+        <a href="contact.html?subject=donation" class="btn btn-sm">Support</a>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="150">
+        <div class="card-icon"><i class="fas fa-heart"></i></div>
+        <h3>Health & Nutrition</h3>
+        <p>Health education, nutrition programs, and support for vulnerable families and people living with HIV/AIDS.</p>
+        <a href="contact.html?subject=donation" class="btn btn-sm">Support</a>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
+        <h3>Community Development</h3>
+        <p>Building local capacity, strengthening community groups, and promoting gender equality and social inclusion.</p>
+        <a href="contact.html?subject=donation" class="btn btn-sm">Support</a>
+      </div>
+    </div>
+
+    <div class="text-center mt-3" data-aos="fade-up">
+      <p style="color:var(--gray-500);">Want to partner with us? <a href="contact.html" style="color:var(--primary);font-weight:600;">Contact us</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-logo footer-logo" style="background:var(--white);color:var(--primary-dark);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:900;border:2px solid var(--accent);"><img src="image/mwea-logo.png" alt="MWEA Logo" style="max-width:100%;height:auto;"></div>
+        <span class="brand-name" style="color:var(--white);font-size:1.1rem;display:block;margin-bottom:0.5rem;">Mara Women Empowerment Assistance</span>
+        <p>Empowering women, youth, and communities in Tanzania's Mara region through education, economic support, and sustainable development since 2004.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/MaraWomenEmpowermentAssistance?mibextid=rS40aB7S9Ucbxw6v" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/mwea_tanzania?igsh=b3UycHdxbGdlbHFv" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/mwea-tanzania" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Programs</h4>
+        <ul class="footer-links">
+          <li><a href="projects.html">Economic Empowerment</a></li>
+          <li><a href="projects.html">Education Support</a></li>
+          <li><a href="projects.html">Water Projects</a></li>
+          <li><a href="projects.html">Vocational Training</a></li>
+          <li><a href="projects.html">Environmental Conservation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Contact Info</h4>
+        <div class="footer-contact">
+          <p><i class="fas fa-map-marker-alt"></i> Musoma Municipal, Tanzania</p>
+          <p><i class="fas fa-location-dot"></i> Rorya District (Shirati)</p>
+          <p><i class="fas fa-phone"></i> +255 282 620 892</p>
+          <p><i class="fas fa-envelope"></i> info@mwea-mara.org</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Mara Women Empowerment Assistance. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

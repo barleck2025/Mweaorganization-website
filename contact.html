@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - MWEA | Mara Women Empowerment Assistance</title>
+  <meta name="description" content="Get in touch with MWEA. Contact us for inquiries, partnerships, volunteering, or donations in Tanzania's Mara region." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="MWEA Home">
+      <div class="brand-logo">
+        <img src="image/mwea-logo.png" alt="MWEA Logo" onerror="this.style.display='none';this.parentElement.textContent='MWEA'">
+      </div>
+      <span class="brand-name">MWEA</span>
+    </a>
+
+    <div class="search-container">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Search pages..." aria-label="Search website" autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="primaryNav" class="nav" aria-label="Main navigation">
+      <button class="nav-close" id="navClose" aria-label="Close menu">✕</button>
+      
+      <div class="nav-search-mobile">
+        <input type="text" id="searchInputMobile" placeholder="Search...">
+      </div>
+      
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">About <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></button>
+          <ul class="dropdown">
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> Who We Are</a></li>
+            <li><a href="about.html#mission"><i class="fas fa-bullseye"></i> Mission</a></li>
+            <li><a href="about.html#vision"><i class="fas fa-eye"></i> Vision</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li class="nav-actions">
+          <a href="contact.html?subject=donation" class="nav-btn nav-btn-donate">Donate</a>
+          <a href="contact.html?subject=volunteer" class="nav-btn nav-btn-volunteer">Volunteer</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== PAGE HEADER ===== -->
+<section class="page-header" style="background: linear-gradient(135deg, rgba(0, 26, 77, 0.95) 0%, rgba(0, 51, 25, 0.95) 100%), url('image/Contact.jpg') center/cover;">
+  <div class="container">
+    <h1 data-aos="fade-up">Contact <span class="highlight">Us</span></h1>
+    <p data-aos="fade-up" data-aos-delay="100">We'd love to hear from you. Reach out for inquiries, partnerships, or to get involved.</p>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section-padding">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Contact Info -->
+      <div>
+        <div class="contact-info-item" data-aos="fade-up">
+          <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Headquarters</h4>
+            <p>Musoma Municipal, Mara Region, Tanzania</p>
+          </div>
+        </div>
+        
+        <div class="contact-info-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon"><i class="fas fa-location-dot"></i></div>
+          <div>
+            <h4>Sub-Office</h4>
+            <p>Rorya District (Shirati), Mara Region, Tanzania</p>
+          </div>
+        </div>
+        
+        <div class="contact-info-item" data-aos="fade-up" data-aos-delay="150">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <h4>Phone</h4>
+            <p>+255 282 620 892</p>
+            <p style="margin-top:0.2rem;">+255 736 620 892</p>
+          </div>
+        </div>
+        
+        <div class="contact-info-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <p>info@mwea-mara.org</p>
+          </div>
+        </div>
+        
+        <div class="contact-info-item" data-aos="fade-up" data-aos-delay="250">
+          <div class="icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <h4>Office Hours</h4>
+            <p>Monday – Friday: 8:00 AM – 5:00 PM</p>
+            <p style="margin-top:0.2rem;">Saturday: 9:00 AM – 1:00 PM</p>
+            <p style="margin-top:0.2rem;color:var(--primary);font-weight:600;">Sunday: Closed</p>
+          </div>
+        </div>
+        
+        <!-- Map -->
+        <div data-aos="fade-up" data-aos-delay="300" style="margin-top:2rem;">
+          <h4 style="color:var(--primary-dark);margin-bottom:0.5rem;">Find Us</h4>
+          <div style="border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-md);">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5044.512279145469!2d33.80249588118916!3d-1.5040224831678028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d301e88cc1b05d%3A0x748d1fb20aa724ba!2sMara%20Women%20Empowerment%20Assistance!5e0!3m2!1sen!2stz!4v1758178488206!5m2!1sen!2stz" 
+              width="100%" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="MWEA Location"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div data-aos="fade-up" data-aos-delay="100">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mnngpbwq" method="POST">
+          <h3 style="color:var(--primary-dark);margin-bottom:1.5rem;">Send Us a Message</h3>
+          
+          <div class="form-group">
+            <label for="name">Full Name <span style="color:#dc2626;">*</span></label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address <span style="color:#dc2626;">*</span></label>
+            <input type="email" id="email" name="_replyto" required placeholder="Enter your email address">
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject <span style="color:#dc2626;">*</span></label>
+            <select id="subject" name="subject" required>
+              <option value="general">General Inquiry</option>
+              <option value="donation">Donation / Support</option>
+              <option value="volunteer">Volunteer Opportunities</option>
+              <option value="partnership">Partnership / Collaboration</option>
+              <option value="sponsorship">Sponsorship</option>
+              <option value="feedback">Feedback / Suggestion</option>
+              <option value="complaint">Complaint</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message <span style="color:#dc2626;">*</span></label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-block">
+            <i class="fas fa-paper-plane" style="margin-right:0.5rem;"></i> Send Message
+          </button>
+          
+          <div id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section-padding section-light">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+      <p>Quick answers to common questions about MWEA.</p>
+    </div>
+    
+    <div style="max-width:800px;margin:0 auto;">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <h3 style="color:var(--primary-dark);"><i class="fas fa-question-circle" style="color:var(--accent-dark);margin-right:0.5rem;"></i> How can I support MWEA?</h3>
+        <p style="color:var(--gray-500);">You can support us through donations, volunteering, or partnerships. Use the form above or <a href="#contact" style="color:var(--primary);font-weight:600;">contact us</a> to learn more.</p>
+      </div>
+      
+      <div class="card" data-aos="fade-up" data-aos-delay="150" style="margin-top:1rem;">
+        <h3 style="color:var(--primary-dark);"><i class="fas fa-question-circle" style="color:var(--accent-dark);margin-right:0.5rem;"></i> Where does my donation go?</h3>
+        <p style="color:var(--gray-500);">100% of your donation goes directly to our programs - education sponsorships, water projects, vocational training, and community development initiatives. We maintain full transparency.</p>
+      </div>
+      
+      <div class="card" data-aos="fade-up" data-aos-delay="200" style="margin-top:1rem;">
+        <h3 style="color:var(--primary-dark);"><i class="fas fa-question-circle" style="color:var(--accent-dark);margin-right:0.5rem;"></i> Can I volunteer with MWEA?</h3>
+        <p style="color:var(--gray-500);">Yes! We welcome volunteers with various skills - teaching, mentoring, fundraising, and more. Contact us using the form above to discuss how you can contribute.</p>
+      </div>
+      
+      <div class="card" data-aos="fade-up" data-aos-delay="250" style="margin-top:1rem;">
+        <h3 style="color:var(--primary-dark);"><i class="fas fa-question-circle" style="color:var(--accent-dark);margin-right:0.5rem;"></i> Where does MWEA operate?</h3>
+        <p style="color:var(--gray-500);">MWEA operates primarily in the Mara region of Tanzania, covering districts such as Butiama, Tarime, and Rorya, with plans for expansion into other Lake Zone areas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-logo footer-logo" style="background:var(--white);color:var(--primary-dark);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:900;border:2px solid var(--accent);"><img src="image/mwea-logo.png" alt="MWEA Logo" style="max-width:100%;height:auto;"></div>
+        <span class="brand-name" style="color:var(--white);font-size:1.1rem;display:block;margin-bottom:0.5rem;">Mara Women Empowerment Assistance</span>
+        <p>Empowering women, youth, and communities in Tanzania's Mara region through education, economic support, and sustainable development since 2004.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/MaraWomenEmpowermentAssistance?mibextid=rS40aB7S9Ucbxw6v" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/mwea_tanzania?igsh=b3UycHdxbGdlbHFv" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/mwea-tanzania" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Programs</h4>
+        <ul class="footer-links">
+          <li><a href="projects.html">Economic Empowerment</a></li>
+          <li><a href="projects.html">Education Support</a></li>
+          <li><a href="projects.html">Water Projects</a></li>
+          <li><a href="projects.html">Vocational Training</a></li>
+          <li><a href="projects.html">Environmental Conservation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Contact Info</h4>
+        <div class="footer-contact">
+          <p><i class="fas fa-map-marker-alt"></i> Musoma Municipal, Tanzania</p>
+          <p><i class="fas fa-location-dot"></i> Rorya District (Shirati)</p>
+          <p><i class="fas fa-phone"></i> +255 282 620 892</p>
+          <p><i class="fas fa-envelope"></i> info@mwea-mara.org</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Mara Women Empowerment Assistance. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

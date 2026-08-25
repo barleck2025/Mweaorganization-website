@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - MWEA | Mara Women Empowerment Assistance</title>
+  <meta name="description" content="Learn about MWEA's mission, vision, history, and team. We empower women and youth in Tanzania's Mara region since 2004." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="MWEA Home">
+      <div class="brand-logo">
+        <img src="image/mwea-logo.png" alt="MWEA Logo" onerror="this.style.display='none';this.parentElement.textContent='MWEA'">
+      </div>
+      <span class="brand-name">MWEA</span>
+    </a>
+
+    <div class="search-container">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Search pages..." aria-label="Search website" autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="primaryNav" class="nav" aria-label="Main navigation">
+      <button class="nav-close" id="navClose" aria-label="Close menu">✕</button>
+      
+      <div class="nav-search-mobile">
+        <input type="text" id="searchInputMobile" placeholder="Search...">
+      </div>
+      
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">About <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></button>
+          <ul class="dropdown">
+            <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i> Who We Are</a></li>
+            <li><a href="#mission"><i class="fas fa-bullseye"></i> Mission</a></li>
+            <li><a href="#vision"><i class="fas fa-eye"></i> Vision</a></li>
+            <li><a href="#values"><i class="fas fa-star"></i> Values</a></li>
+            <li><a href="#journey"><i class="fas fa-timeline"></i> Our Journey</a></li>
+            <li><a href="#team"><i class="fas fa-users"></i> Our Team</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-actions">
+          <a href="contact.html?subject=donation" class="nav-btn nav-btn-donate">Donate</a>
+          <a href="contact.html?subject=volunteer" class="nav-btn nav-btn-volunteer">Volunteer</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== PAGE HEADER ===== -->
+<section class="page-header" style="background: linear-gradient(135deg, rgba(0, 26, 77, 0.95) 0%, rgba(0, 51, 25, 0.95) 100%), url('image/water\,\,\,\,.jpg') center/cover;">
+  <div class="container">
+    <h1 data-aos="fade-up" style="color: var(--white); font-size: 3.5rem; margin-bottom: 1rem;">About <span style="color: var(--accent-light);">MWEA</span></h1>
+    <p data-aos="fade-up" data-aos-delay="100" style="color: rgba(255,255,255,0.9); font-size: 1.2rem; max-width: 600px;">Discover our story, mission, and commitment to empowering communities in the Mara region since 2004.</p>
+  </div>
+</section>
+
+<!-- ===== WHO WE ARE ===== -->
+<section class="section-padding who-we-are-section" id="who-we-are">
+  <div class="container">
+    <div class="two-col">
+      <div class="who-we-are-content" data-aos="fade-right">
+        <h2 style="color:var(--primary-dark);margin-bottom:1rem;">Who We <span style="color:var(--accent-dark);">Are</span></h2>
+        <p class="lead" style="color:var(--gray-600);font-size:1.05rem;line-height:1.8;">
+          Mara Women Empowerment Assistance (MWEA) is a grassroots Non-Governmental Organization (NGO) registered in Tanzania in 2004 under the Companies Ordinance-Chapter 212 of the Laws of Tanzania.
+        </p>
+        <p style="color:var(--gray-500);line-height:1.8;">
+          The organization's headquarters is in Musoma, located along the shores of Lake Victoria in the Northern region of Tanzania. 
+          MWEA was founded by three women and two men to support both urban and rural communities, with a particular focus on women and 
+          youth engaged in micro-enterprises.
+        </p>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">2004</span>
+            <p class="stat-label">Year Registered</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">25+</span>
+            <p class="stat-label">Villages Reached</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">15</span>
+            <p class="stat-label">Active Programs</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">15,000+</span>
+            <p class="stat-label">Beneficiaries Reached</p>
+          </div>
+        </div>
+      </div>
+      <div class="who-we-are-image" data-aos="fade-left">
+        <img src="image/team..jpg" alt="MWEA Team" class="image-full" style="border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MISSION & VISION ===== -->
+<section class="section-padding section-light" id="mission-vision">
+  <div class="container">
+    <div class="two-col">
+      <div class="mission-card" data-aos="fade-right" id="mission">
+        <div class="mission-vision-box">
+          <div class="mission-vision-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Our Mission</h3>
+          <p>
+            To empower communities through innovative microfinance services, community development projects, and capacity-building 
+            initiatives while advocating for gender equality, environmental sustainability, and inclusive economic growth.
+          </p>
+        </div>
+      </div>
+      <div class="vision-card" data-aos="fade-left" id="vision">
+        <div class="mission-vision-box">
+          <div class="mission-vision-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3>Our Vision</h3>
+          <p>
+            A self-sustaining, equitable society where every individual, particularly marginalized groups, can contribute to and 
+            benefit from economic growth and environmental conservation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VALUES ===== -->
+<section class="section-padding" id="values">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Our Core <span class="highlight">Values</span></h2>
+      <p>The principles that guide everything we do.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon"><i class="fas fa-shield-alt"></i></div>
+        <h4>Transparency</h4>
+        <p>We operate with openness and honesty in all our dealings, ensuring accountability to our stakeholders.</p>
+      </div>
+      <div class="value-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="icon"><i class="fas fa-hand-holding-heart"></i></div>
+        <h4>Respect</h4>
+        <p>We treat every person with dignity, kindness, and respect, understanding the unique challenges they face.</p>
+      </div>
+      <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <h4>Community Focused</h4>
+        <p>We are deeply rooted in the communities we serve, listening to their needs and co-creating solutions.</p>
+      </div>
+      <div class="value-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="icon"><i class="fas fa-bolt"></i></div>
+        <h4>Responsiveness</h4>
+        <p>We respond quickly and effectively to the needs of our communities and stakeholders.</p>
+      </div>
+      <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon"><i class="fas fa-chart-line"></i></div>
+        <h4>Effectiveness</h4>
+        <p>We are committed to delivering measurable, sustainable outcomes that improve lives.</p>
+      </div>
+      <div class="value-card" data-aos="fade-up" data-aos-delay="350">
+        <div class="icon"><i class="fas fa-check-circle"></i></div>
+        <h4>Reliability</h4>
+        <p>We build trust through consistent, dependable service and follow-through on our commitments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TIMELINE - OUR JOURNEY ===== -->
+<section class="section-padding section-light" id="journey">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Our <span class="highlight">Journey</span></h2>
+      <p>Key milestones in our history of empowering communities since 2004.</p>
+    </div>
+    
+    <div class="timeline">
+      <!-- 2004 -->
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <span class="year">2004</span>
+          <h4>Official Registration</h4>
+          <p>MWEA was officially registered in Tanzania under the Companies Ordinance - Chapter 212 of the Laws of Tanzania, with certificate number 49692.</p>
+        </div>
+      </div>
+      
+      <!-- 2010 -->
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-content">
+          <span class="year">2010</span>
+          <h4>Foundation</h4>
+          <p>MWEA was founded by three women and two men to support urban and rural communities, with a focus on women and youth engaged in micro-enterprises.</p>
+        </div>
+      </div>
+      
+      <!-- 2012 -->
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <span class="year">2012</span>
+          <h4>First Sponsorships</h4>
+          <p>Launched our education sponsorship program, supporting 15 vulnerable girls to attend secondary school.</p>
+        </div>
+      </div>
+      
+      <!-- 2015 -->
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-content">
+          <span class="year">2015</span>
+          <h4>Vocational Training Center</h4>
+          <p>Established our first vocational training center offering tailoring and handicrafts programs for women.</p>
+        </div>
+      </div>
+      
+      <!-- 2018 -->
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <span class="year">2018</span>
+          <h4>Agriculture Expansion</h4>
+          <p>Partnered with local farmers to introduce sustainable agriculture techniques, benefiting over 200 families.</p>
+        </div>
+      </div>
+      
+      <!-- 2019 -->
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-content">
+          <span class="year">2019</span>
+          <h4>WWCC Project Launch</h4>
+          <p>Launched the Women and Water for Change in Communities (WWCC) project, funded by the Coca-Cola Foundation and implemented by IHE Delft.</p>
+        </div>
+      </div>
+      
+      <!-- 2020 -->
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <span class="year">2020</span>
+          <h4>Water Projects Begin</h4>
+          <p>Constructed our first water pans to provide clean water to rural communities, improving health and reducing time spent collecting water.</p>
+        </div>
+      </div>
+      
+      <!-- 2022 -->
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-content">
+          <span class="year">2022</span>
+          <h4>Expanded Reach</h4>
+          <p>Operating in 25 villages across Mara Region with 15 active programs, serving over 1,500 women and youth annually across Butiama, Tarime, and Rorya districts.</p>
+        </div>
+      </div>
+      
+      <!-- 2023 -->
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <span class="year">2023</span>
+          <h4>DUPC3 Waterpans Project</h4>
+          <p>Launched a 5-year sustainable waterpans project (2023-2027) funded by the Dutch government, focused on water and health, building local capacities in Tanzania and Kenya.</p>
+        </div>
+      </div>
+      
+      <!-- 2026 -->
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-content">
+          <span class="year">2026</span>
+          <h4>Current Impact</h4>
+          <p>MWEA continues to empower communities through microfinance, entrepreneurship training, and community-driven projects across the Mara region, with plans for further expansion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section class="section-padding" id="team">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <span class="section-kicker">The people behind the progress</span>
+      <h2>Meet Our <span class="highlight">Leadership</span></h2>
+      <p>Experienced, community-rooted leaders turning local knowledge into lasting opportunity across Mara.</p>
+    </div>
+    
+    <div class="leadership-note" data-aos="fade-up">
+      <i class="fas fa-quote-left" aria-hidden="true"></i>
+      <p>Our leadership combines practical experience, accountable planning, and a deep belief in the strength of the communities we serve.</p>
+    </div>
+
+    <div class="team-grid leadership-grid">
+      <div class="team-card" data-aos="flip-up" data-aos-delay="100">
+        <img src="image/Sange.jpg" alt="Mary Sange" class="team-image" >
+        <div class="team-info">
+          <h3>Mary Sange</h3>
+          <p class="role">Executive Director</p>
+          <p class="bio">Mary provides strategic direction for MWEA, guiding programmes, partnerships, and organisational growth across the Mara region. Her leadership keeps the organisation focused on expanding economic opportunity, strengthening women and youth, and building practical solutions that improve the wellbeing of families and communities.</p>
+        </div>
+      </div>
+      
+      <div class="team-card" data-aos="flip-up" data-aos-delay="200">
+        <img src="image/MTETE.jpg" alt="Johanes R. Mtete" class="team-image">
+        <div class="team-info">
+          <h3>Johanes R. Mtete</h3>
+          <p class="role">Planning & Operations Officer</p>
+          <p class="bio">Johanes strengthens programme planning and delivery, helping teams turn community priorities into practical, measurable action. He supports coordination, accountability, and continuous learning so that MWEA projects respond to local needs, use resources responsibly, and create meaningful results for the communities we serve.</p>
+        </div>
+      </div>
+      <div class="team-card team-card-featured" data-aos="flip-up" data-aos-delay="300">
+        <img src="image/Msamba.jpg" alt="Msamba Cha" class="team-image">
+        <div class="team-info">
+          <h3>Msamba Chacha Machura</h3>
+          <p class="role">Head of Community Services, Programme Development & Partnerships (CODEP)</p>
+          <p class="bio">Msamba leads community services and programme partnerships with a focus on strengthening women, girls, young people, and local institutions. His work is grounded in the belief that communities understand their realities best and have the voice, leadership, and agency to shape lasting change.</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-3" data-aos="fade-up">
+      <a href="contact.html" class="btn">Contact Our Team</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-logo footer-logo" style="background:var(--white);color:var(--primary-dark);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:900;border:2px solid var(--accent);"><img src="image/mwea-logo.png" alt="MWEA Logo" style="max-width:100%;height:auto;"></div>
+        <span class="brand-name" style="color:var(--white);font-size:1.1rem;display:block;margin-bottom:0.5rem;">Mara Women Empowerment Assistance</span>
+        <p>Empowering women, youth, and communities in Tanzania's Mara region through education, economic support, and sustainable development since 2004.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/MaraWomenEmpowermentAssistance?mibextid=rS40aB7S9Ucbxw6v" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/mwea_tanzania?igsh=b3UycHdxbGdlbHFv" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/mwea-tanzania" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Programs</h4>
+        <ul class="footer-links">
+          <li><a href="projects.html">Economic Empowerment</a></li>
+          <li><a href="projects.html">Education Support</a></li>
+          <li><a href="projects.html">Water Projects</a></li>
+          <li><a href="projects.html">Vocational Training</a></li>
+          <li><a href="projects.html">Environmental Conservation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Contact Info</h4>
+        <div class="footer-contact">
+          <p><i class="fas fa-map-marker-alt"></i> Musoma Municipal, Tanzania</p>
+          <p><i class="fas fa-location-dot"></i> Rorya District (Shirati)</p>
+          <p><i class="fas fa-phone"></i> +255 282 620 892</p>
+          <p><i class="fas fa-envelope"></i> info@mwea-mara.org</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Mara Women Empowerment Assistance. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

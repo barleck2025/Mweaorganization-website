@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MWEA - Mara Women Empowerment Assistance</title>
+  <meta name="description" content="MWEA empowers women, youth, and communities in Tanzania's Mara region through education, economic support, and sustainable development since 2004." />
+  <meta name="keywords" content="MWEA, women empowerment, Tanzania, Mara, education, water projects, community development" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="MWEA - Mara Women Empowerment Assistance" />
+  <meta property="og:description" content="Empowering women, youth, and communities in Tanzania's Mara region since 2004." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mwea.org" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="image/mwea-logo.png" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="MWEA Home">
+      <div class="brand-logo">
+        <img src="image/mwea-logo.png" alt="MWEA Logo" onerror="this.style.display='none';this.parentElement.textContent='MWEA'">
+      </div>
+      <span class="brand-name">MWEA</span>
+    </a>
+
+    <div class="search-container">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Search pages..." aria-label="Search website" autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="primaryNav" class="nav" aria-label="Main navigation">
+      <button class="nav-close" id="navClose" aria-label="Close menu">✕</button>
+      
+      <div class="nav-search-mobile">
+        <input type="text" id="searchInputMobile" placeholder="Search...">
+      </div>
+      
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="has-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">About <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></button>
+          <ul class="dropdown">
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> Who We Are</a></li>
+            <li><a href="about.html#mission"><i class="fas fa-bullseye"></i> Mission</a></li>
+            <li><a href="about.html#vision"><i class="fas fa-eye"></i> Vision</a></li>
+            <li><a href="about.html#journey"><i class="fas fa-timeline"></i> Our Journey</a></li>
+            <li><a href="about.html#team"><i class="fas fa-users"></i> Our Team</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-actions">
+          <a href="contact.html?subject=donation" class="nav-btn nav-btn-donate">Donate</a>
+          <a href="contact.html?subject=volunteer" class="nav-btn nav-btn-volunteer">Volunteer</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO CAROUSEL ===== -->
+<section class="hero-carousel" id="heroCarousel" role="banner">
+  
+  <!-- Slide 1 -->
+  <div class="hero-slide active" style="background-image: url('image/Brighter.jpg');" data-index="0">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Building a Brighter <span class="highlight">Future</span> Together</h1>
+      <p>MWEA works with communities in the Mara region to create lasting change through education, economic empowerment, and sustainable development.</p>
+      <div class="hero-actions">
+        <a href="about.html" class="btn">Learn More</a>
+        <a href="contact.html?subject=donation" class="btn btn-outline">Support Us</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Slide 2 -->
+  <div class="hero-slide" style="background-image: url('image/Empowerment.jpg');" data-index="1">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Empowering <span class="highlight">Women</span> to Lead</h1>
+      <p>We believe in the power of women to transform their communities. Through training, mentorship, and economic support, we're creating opportunities.</p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn">Our Projects</a>
+        <a href="contact.html?subject=volunteer" class="btn btn-outline">Get Involved</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Slide 3 -->
+  <div class="hero-slide" style="background-image: url('image/education\ all.avif');" data-index="2">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Every Child <span class="highlight">Deserves</span> Education</h1>
+      <p>We sponsor bright but needy students, provide school supplies, and build classrooms to ensure every child has access to quality education.</p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn">Learn More</a>
+        <a href="contact.html?subject=donation" class="btn btn-outline">Sponsor a Child</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Slide 4 -->
+  <div class="hero-slide" style="background-image: url('image/water\,\,\,\,.jpg');" data-index="3">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Water for <span class="highlight">Life</span></h1>
+      <p>Our water projects provide clean, safe water to rural communities, reducing disease and freeing up time for education and income-generating activities.</p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn">View Projects</a>
+        <a href="contact.html?subject=donation" class="btn btn-outline">Support Water Projects</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Slide 5 -->
+  <div class="hero-slide" style="background-image: url('image/award.jpg');" data-index="4">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Building <span class="highlight">Stronger</span> Communities</h1>
+      <p>Through collective action and shared resources, we're creating resilient communities across the Mara region.</p>
+      <div class="hero-actions">
+        <a href="about.html" class="btn">Our Story</a>
+        <a href="contact.html" class="btn btn-outline">Partner With Us</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Controls -->
+  <button class="hero-arrow prev" id="heroPrev" aria-label="Previous slide">‹</button>
+  <button class="hero-arrow next" id="heroNext" aria-label="Next slide">›</button>
+  
+  <div class="hero-controls" id="heroDots"></div>
+  
+</section>
+
+<!-- ===== ABOUT PREVIEW ===== -->
+<section class="section-padding" id="about">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Who We <span class="highlight">Are</span></h2>
+      <p>Mara Women Empowerment Assistance (MWEA) is a grassroots NGO registered in Tanzania in 2004, dedicated to empowering women, youth, and communities.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+        <h3>Our Mission</h3>
+        <p>To empower communities through innovative microfinance services, community development projects, and capacity-building initiatives while advocating for gender equality and inclusive economic growth.</p>
+        <a href="about.html#mission" class="btn btn-sm">Learn More</a>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="150">
+        <div class="card-icon"><i class="fas fa-eye"></i></div>
+        <h3>Our Vision</h3>
+        <p>A self-sustaining, equitable society where every individual, particularly marginalized groups, can contribute to and benefit from economic growth and environmental conservation.</p>
+        <a href="about.html#vision" class="btn btn-sm">Learn More</a>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-icon"><i class="fas fa-star"></i></div>
+        <h3>Our Values</h3>
+        <p>Transparency, accountability, respect, community focus, responsiveness, effectiveness, efficiency, and reliability guide everything we do.</p>
+        <a href="about.html#values" class="btn btn-sm">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES PREVIEW ===== -->
+<section class="section-padding section-light" id="services">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>What We <span class="highlight">Do</span></h2>
+      <p>Our programs address the most pressing needs in the Mara region.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon"><i class="fas fa-hand-holding-usd"></i></div>
+        <h4>Economic Empowerment</h4>
+        <p>Micro-loans, entrepreneurship training, and SACCOS support to help individuals start and grow small businesses.</p>
+        <a href="projects.html" class="btn btn-sm">Learn More</a>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+        <h4>Education Support</h4>
+        <p>Scholarships, school supplies, and infrastructure support for underprivileged children from primary to university level.</p>
+        <a href="projects.html" class="btn btn-sm">Learn More</a>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon"><i class="fas fa-water"></i></div>
+        <h4>Water Projects</h4>
+        <p>Constructing water pans and promoting sustainable water resource management for communities in need.</p>
+        <a href="projects.html" class="btn btn-sm">Learn More</a>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="icon"><i class="fas fa-heart"></i></div>
+        <h4>Community Well-being</h4>
+        <p>Health services, HIV/AIDS awareness, food security, and nutrition programs for vulnerable populations.</p>
+        <a href="projects.html" class="btn btn-sm">Learn More</a>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon"><i class="fas fa-seedling"></i></div>
+        <h4>Environmental Conservation</h4>
+        <p>Tree nurseries, beekeeping, poultry farming, and sustainable agriculture initiatives across the Mara region.</p>
+        <a href="projects.html" class="btn btn-sm">Learn More</a>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <h4>Advocacy & Education</h4>
+        <p>Raising awareness on critical social issues, promoting gender equality, and fighting Gender-Based Violence.</p>
+        <a href="projects.html" class="btn btn-sm">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COUNTER SECTION ===== -->
+<section class="counter-section overlay" id="impact">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Our <span style="color:var(--accent);">Impact</span></h2>
+      <p>Numbers that show real change in our communities.</p>
+    </div>
+    <div class="counter-grid">
+      <div class="counter-item" data-aos="zoom-in" data-aos-delay="100">
+        <h3 id="counterPeople">0</h3>
+        <p>People Reached</p>
+      </div>
+      <div class="counter-item" data-aos="zoom-in" data-aos-delay="150">
+        <h3 id="counterWomen">0</h3>
+        <p>Women Empowered</p>
+      </div>
+      <div class="counter-item" data-aos="zoom-in" data-aos-delay="200">
+        <h3 id="counterYouth">0</h3>
+        <p>Youth Supported</p>
+      </div>
+      <div class="counter-item" data-aos="zoom-in" data-aos-delay="250">
+        <h3 id="counterProjects">0</h3>
+        <p>Projects Completed</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>What People <span class="highlight">Say</span></h2>
+      <p>Real stories from people whose lives have been transformed.</p>
+    </div>
+    
+    <div class="testimonial-carousel" id="testimonialCarousel">
+      
+      <!-- Testimony 1 -->
+      <div class="testimonial-slide active" data-index="0">
+        <img src="image/women.jpg" alt="Sarah M." class="testimonial-avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22 viewBox=%220 0 80 80%22%3E%3Ccircle cx=%2240%22 cy=%2240%22 r=%2240%22 fill=%22%23e8f5ed%22/%3E%3Ctext x=%2240%22 y=%2248%22 text-anchor=%22middle%22 font-size=%2236%22 fill=%22%230a4a4a%22%3E👩%3C/text%3E%3C/svg%3E'">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">MWEA changed my life completely. Through their training and support, I started my own tailoring business. I can now support my family and even employ other women in my community.</p>
+        <p class="testimonial-author">Sarah M.</p>
+        <span class="testimonial-role">Tailoring Business Owner, Musoma</span>
+      </div>
+      
+      <!-- Testimony 2 -->
+      <div class="testimonial-slide" data-index="1">
+        <img src="image/students.jpg" alt="James K." class="testimonial-avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22 viewBox=%220 0 80 80%22%3E%3Ccircle cx=%2240%22 cy=%2240%22 r=%2240%22 fill=%22%23e8f5ed%22/%3E%3Ctext x=%2240%22 y=%2248%22 text-anchor=%22middle%22 font-size=%2236%22 fill=%22%230a4a4a%22%3E👨%3C/text%3E%3C/svg%3E'">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">MWEA sponsored my education when I had no hope. Now I'm in university studying agriculture. I want to give back and help my community just as MWEA helped me.</p>
+        <p class="testimonial-author">James K.</p>
+        <span class="testimonial-role">University Student, Rorya</span>
+      </div>
+      
+      <!-- Testimony 3 -->
+      <div class="testimonial-slide" data-index="2">
+        <img src="image/community.jpg" alt="Mama Asha" class="testimonial-avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22 viewBox=%220 0 80 80%22%3E%3Ccircle cx=%2240%22 cy=%2240%22 r=%2240%22 fill=%22%23e8f5ed%22/%3E%3Ctext x=%2240%22 y=%2248%22 text-anchor=%22middle%22 font-size=%2236%22 fill=%22%230a4a4a%22%3E👩%3C/text%3E%3C/svg%3E'">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">We used to walk 5km for water. Now with the water pan MWEA built, we have water for our homes and animals year-round. Our children are healthier and we have more time to work.</p>
+        <p class="testimonial-author">Mama Asha</p>
+        <span class="testimonial-role">Community Member, Shirati</span>
+      </div>
+      
+      <!-- Testimony 4 -->
+      <div class="testimonial-slide" data-index="3">
+        <img src="image/education.jpg" alt="Peter O." class="testimonial-avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22 viewBox=%220 0 80 80%22%3E%3Ccircle cx=%2240%22 cy=%2240%22 r=%2240%22 fill=%22%23e8f5ed%22/%3E%3Ctext x=%2240%22 y=%2248%22 text-anchor=%22middle%22 font-size=%2236%22 fill=%22%230a4a4a%22%3E👨%3C/text%3E%3C/svg%3E'">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">MWEA's agricultural training helped me double my harvest. I now use modern farming techniques and my family has enough food and income to thrive. I'm training other farmers too.</p>
+        <p class="testimonial-author">Peter O.</p>
+        <span class="testimonial-role">Farmer, Musoma</span>
+      </div>
+      
+      <!-- Controls -->
+      <div class="testimonial-controls">
+        <button id="prevTestimonial" aria-label="Previous testimonial">‹</button>
+        <button id="nextTestimonial" aria-label="Next testimonial">›</button>
+      </div>
+      <div class="testimonial-dots" id="testimonialDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS PREVIEW ===== -->
+<section class="section-padding section-light" id="projects">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Our <span class="highlight">Projects</span></h2>
+      <p>Initiatives creating lasting change in communities across the Mara region.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="image/dimbwi.jpg" alt="Water Project" class="project-image">
+        <div class="project-info">
+          <span class="project-tag">Water & Sanitation</span>
+          <h3>DUPC3 Waterpans Project</h3>
+          <p>A 5-year project (2023-2027) funded by the Dutch government, enhancing sustainable water resource management in Tanzania and Kenya.</p>
+          <a href="projects.html" class="btn btn-sm">Learn More</a>
+        </div>
+      </div>
+      
+      <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+        <img src="image/scholarship.jpg" alt="Education Project" class="project-image">
+        <div class="project-info">
+          <span class="project-tag">Education</span>
+          <h3>Scholarship Program</h3>
+          <p>Supporting bright but needy students with school fees, supplies, and mentorship to help them complete their education and build a better future.</p>
+          <a href="projects.html" class="btn btn-sm">Learn More</a>
+        </div>
+      </div>
+      
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="image/training.webp" alt="Vocational Training" class="project-image">
+        <div class="project-info">
+          <span class="project-tag">Economic Empowerment</span>
+          <h3>Vocational Training</h3>
+          <p>Providing skills training in tailoring, agriculture, and small business to create sustainable livelihoods for women and youth.</p>
+          <a href="projects.html" class="btn btn-sm">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-3" data-aos="fade-up">
+      <a href="projects.html" class="btn">View All Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CALL TO ACTION ===== -->
+<section class="section-padding" style="background:var(--primary-gradient);color:var(--white);text-align:center;">
+  <div class="container">
+    <h2 data-aos="fade-up" style="color:var(--white);font-size:clamp(1.6rem,3vw,2.4rem);">Join Us in Making a <span style="color:var(--accent);">Difference</span></h2>
+    <p data-aos="fade-up" data-aos-delay="100" style="max-width:600px;margin:1rem auto;opacity:0.9;">Your support can help transform more lives in the Mara region. Whether through donations, volunteering, or partnerships, every contribution counts.</p>
+    <div class="hero-actions" data-aos="fade-up" data-aos-delay="200" style="justify-content:center;margin-top:2rem;">
+      <a href="contact.html?subject=donation" class="btn btn-accent">Donate Now</a>
+      <a href="contact.html?subject=volunteer" class="btn btn-outline">Volunteer</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-logo footer-logo" style="background:var(--white);color:var(--primary-dark);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:900;border:2px solid var(--accent);"><img src="image/mwea-logo.png" alt="MWEA Logo" style="max-width:100%;height:auto;"></div>
+        <span class="brand-name" style="color:var(--white);font-size:1.1rem;display:block;margin-bottom:0.5rem;">Mara Women Empowerment Assistance</span>
+        <p>Empowering women, youth, and communities in Tanzania's Mara region through education, economic support, and sustainable development since 2004.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/MaraWomenEmpowermentAssistance?mibextid=rS40aB7S9Ucbxw6v" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/mwea_tanzania?igsh=b3UycHdxbGdlbHFv" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/mwea-tanzania" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Programs</h4>
+        <ul class="footer-links">
+          <li><a href="projects.html">Economic Empowerment</a></li>
+          <li><a href="projects.html">Education Support</a></li>
+          <li><a href="projects.html">Water Projects</a></li>
+          <li><a href="projects.html">Vocational Training</a></li>
+          <li><a href="projects.html">Environmental Conservation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Contact Info</h4>
+        <div class="footer-contact">
+          <p><i class="fas fa-map-marker-alt"></i> Musoma Municipal, Tanzania</p>
+          <p><i class="fas fa-location-dot"></i> Rorya District (Shirati)</p>
+          <p><i class="fas fa-phone"></i> +255 282 620 892</p>
+          <p><i class="fas fa-envelope"></i> info@mwea-mara.org</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Mara Women Empowerment Assistance. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

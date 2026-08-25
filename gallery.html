@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - MWEA | Mara Women Empowerment Assistance</title>
+  <meta name="description" content="View photos from MWEA's projects, training events, and community activities in Tanzania's Mara region." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="MWEA Home">
+      <div class="brand-logo">
+        <img src="image/mwea-logo.png" alt="MWEA Logo" onerror="this.style.display='none';this.parentElement.textContent='MWEA'">
+      </div>
+      <span class="brand-name">MWEA</span>
+    </a>
+
+    <div class="search-container">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Search pages..." aria-label="Search website" autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="primaryNav" class="nav" aria-label="Main navigation">
+      <button class="nav-close" id="navClose" aria-label="Close menu">✕</button>
+      
+      <div class="nav-search-mobile">
+        <input type="text" id="searchInputMobile" placeholder="Search...">
+      </div>
+      
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">About <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></button>
+          <ul class="dropdown">
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> Who We Are</a></li>
+            <li><a href="about.html#mission"><i class="fas fa-bullseye"></i> Mission</a></li>
+            <li><a href="about.html#vision"><i class="fas fa-eye"></i> Vision</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-actions">
+          <a href="contact.html?subject=donation" class="nav-btn nav-btn-donate">Donate</a>
+          <a href="contact.html?subject=volunteer" class="nav-btn nav-btn-volunteer">Volunteer</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== PAGE HEADER ===== -->
+<section class="page-header" style="background: linear-gradient(135deg, rgba(0, 26, 77, 0.95) 0%, rgba(0, 51, 25, 0.95) 100%), url('image/gallery.jpg') center/cover;">
+  <div class="container">
+    <h1 data-aos="fade-up">Our <span class="highlight">Gallery</span></h1>
+    <p data-aos="fade-up" data-aos-delay="100">Photos from our projects, training events, and community activities.</p>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="section-padding">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Moments <span class="highlight">That Matter</span></h2>
+      <p>See the impact of our work through these images.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+        <img src="image/water...jpg" alt="Community water project" >
+        <div class="gallery-overlay">
+          <span>Water Project Launch</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
+        <img src="image/students.jpg" alt="Education program">
+        <div class="gallery-overlay">
+          <span>Education Support</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+        <img src="image/mentor.jpg" alt="Vocational training">
+        <div class="gallery-overlay">
+          <span>Vocational Training</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
+        <img src="image/masurura-water.jpg" alt="Agriculture project">
+        <div class="gallery-overlay">
+          <span>Agriculture Support</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+        <img src="image/women.jpg" alt="Women empowerment">
+        <div class="gallery-overlay">
+          <span>Women's Empowerment</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
+        <img src="image/nutrition.jpg" alt="Health program">
+        <div class="gallery-overlay">
+          <span>Health & Nutrition</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+        <img src="image/community.jpg" alt="Community event">
+        <div class="gallery-overlay">
+          <span>Community Events</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="450">
+        <img src="image/Youth.jpg" alt="Youth program">
+        <div class="gallery-overlay">
+          <span>Youth Programs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-3" data-aos="fade-up">
+      <p style="color:var(--gray-500);">Want to share your photos? <a href="contact.html" style="color:var(--primary);font-weight:600;">Contact us</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-logo footer-logo" style="background:var(--white);color:var(--primary-dark);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:900;border:2px solid var(--accent);"><img src="image/mwea-logo.png" alt="MWEA Logo" style="max-width:100%;height:auto;"></div>
+        <span class="brand-name" style="color:var(--white);font-size:1.1rem;display:block;margin-bottom:0.5rem;">Mara Women Empowerment Assistance</span>
+        <p>Empowering women, youth, and communities in Tanzania's Mara region through education, economic support, and sustainable development since 2004.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/MaraWomenEmpowermentAssistance?mibextid=rS40aB7S9Ucbxw6v" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/mwea_tanzania?igsh=b3UycHdxbGdlbHFv" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/mwea-tanzania" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Programs</h4>
+        <ul class="footer-links">
+          <li><a href="projects.html">Economic Empowerment</a></li>
+          <li><a href="projects.html">Education Support</a></li>
+          <li><a href="projects.html">Water Projects</a></li>
+          <li><a href="projects.html">Vocational Training</a></li>
+          <li><a href="projects.html">Environmental Conservation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Contact Info</h4>
+        <div class="footer-contact">
+          <p><i class="fas fa-map-marker-alt"></i> Musoma Municipal, Tanzania</p>
+          <p><i class="fas fa-location-dot"></i> Rorya District (Shirati)</p>
+          <p><i class="fas fa-phone"></i> +255 282 620 892</p>
+          <p><i class="fas fa-envelope"></i> info@mwea-mara.org</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Mara Women Empowerment Assistance. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
